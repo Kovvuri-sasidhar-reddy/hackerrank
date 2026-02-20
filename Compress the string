@@ -1,0 +1,6 @@
+rom itertools import groupby
+
+s = input().strip()
+
+for k, g in groupby(s):
+    print((len(list(g)), int(k)), end=" ")
